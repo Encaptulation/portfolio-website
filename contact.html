@@ -22,24 +22,26 @@
 <section>
   <h2 class="section-title">Contact Me</h2>
 
-  <form action="https://formsubmit.co/jb0874788@gmail.com" method="POST">
+<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+  
+  <!-- Disable captcha -->
   <input type="hidden" name="_captcha" value="false">
+
+  <!-- Optional: use table template -->
   <input type="hidden" name="_template" value="table">
 
-    <label>Name:</label>
-    <input type="text" placeholder="Your name" required>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-    <label>Email:</label>
-    <input type="email" placeholder="your.email@example.com">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-    <label>Phone:</label>
-    <input type="text" placeholder="+91-XXXXXXXXXX">
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
 
-    <label>Message:</label>
-    <textarea rows="5" placeholder="Write your message..."></textarea>
+  <button type="submit">Send Message</button>
+</form>
 
-    <button type="submit">Send Message</button>
-  </form>
 </section>
 
 <footer>
@@ -49,3 +51,4 @@
 <script src="assets/script.js"></script>
 </body>
 </html>
+
